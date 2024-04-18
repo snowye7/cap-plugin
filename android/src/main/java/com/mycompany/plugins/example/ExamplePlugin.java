@@ -17,18 +17,18 @@ public class ExamplePlugin extends Plugin {
 
         JSObject ret = new JSObject();
         ret.put("success", "true");
-        LocalBroadcastManager.getInstance(this.bridge.getContext()).sendBroadcast(new Intent("com.ydjw.ua.ua.ACTION_LOGIN"));
+        getContext().sendBroadcast(new Intent("com.ydjw.ua.ua.ACTION_LOGOUT"));
         call.resolve(ret);
     }
-
+    @PluginMethod
     public void sendLogOutBroadcast(PluginCall call) {
         //String value = call.getString("value");
-        LocalBroadcastManager.getInstance(this.bridge.getContext()).sendBroadcast(new Intent("com.ydjw.ua.ua.ACTION_LOGOUT"));
+        getContext().sendBroadcast(new Intent("com.ydjw.ua.ua.ACTION_LOGOUT"));
         JSObject ret = new JSObject();
         ret.put("success", "true");
         call.resolve(ret);
     }
-
+    @PluginMethod
     public void getRecord(PluginCall call) {
         //String value = call.getString("value");
         String recordNum=SpUtils.getString(context,Constant.RECORDNUM);

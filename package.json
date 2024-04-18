@@ -1,6 +1,6 @@
 {
   "name": "cap-plugin-webtoandroid",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "cap-plugin-webtoandroid",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
