@@ -36,4 +36,5 @@ public class ExamplePlugin extends Plugin {
         ret.put("success", ""+recordNum);
         call.resolve(ret);
     }
+    
 }
