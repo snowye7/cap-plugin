@@ -33,6 +33,13 @@ npx cap sync
 | **`data`**   | <code><a href="#record">Record</a>&lt;string, any&gt;</code> |
 
 
+#### PluginListenerHandle
+
+| Prop         | Type                                      |
+| ------------ | ----------------------------------------- |
+| **`remove`** | <code>() =&gt; Promise&lt;void&gt;</code> |
+
+
 ### Type Aliases
 
 
@@ -41,5 +48,10 @@ npx cap sync
 Construct a type with a set of properties K of type T
 
 <code>{ [P in K]: T; }</code>
+
+
+#### ListenerCallback
+
+<code>(err: any, ...args: any[]): void</code>
 
 </docgen-api>
